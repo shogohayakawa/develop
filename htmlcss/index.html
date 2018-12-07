@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>HTML/CSS</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="../js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="../js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="../js/jquery.rollover.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slideshow({
+		touch		: true,
+		touchDistance : '80',
+		bgImage	  : false,
+		autoSlide	: true,
+		effect	   : 'slide',
+		repeat	   : true,
+		easing	   : 'swing',
+		interval	 : 3000,
+		duration	 : 500,
+		imgHoverStop : true,
+		navHoverStop : true,
+		navImg	   : false,
+		navImgCustom : false,
+		navImgSuffix : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="contents">
+	<div id="sub">
+		<header>
+			<h1><font color="white">HTML/CSS</font></h1>
+			<p class="summary">
+			開発研修サイト
+			</p>
+		</header>
+		<nav>
+			<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="wireFrame.html">ワイヤーフレーム</a></li>
+				<li><a href="header.html">ヘッダー</a></li>
+				<li><a href="footer.html">フッター</a></li>
+				<li><a href="mainVisual.html">メインビジュアル</a></li>
+				<li><a href="main.html">メイン</a></li>
+				<li><a href="modifications.html">サイト仕上げ</a></li>
+				<li><a href="responsive.html">レスポンシブ対応</a></li>
+				<li><a href="siteUpload.html">Webサイト公開</a></li>
+				<li><a href="../index.html">TOPへ戻る</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="main">
+		<h2>HOME</h2>
+		<h3>制作画面完成イメージ</h3>
+         <br>
+         この学習では、HTML/CSSを活用して下記サイトを作成していただきます。
+         <br><br>
+         <p id="img">
+            <img src="../images/htmlcss/imageAll1.png" width="100%"/>
+         </p>
+         <br>
+         完成イメージをおおまかなブロックに分けると、下記のようになります。<br><br>
+         ・headerブロック<br>
+         ・main-visualブロック<br>
+         ・mainブロック<br>
+         ・footerブロック<br><br>
+         <p id="img">
+            <img src="../images/htmlcss/imageAll2.png" width="100%"/>
+         </p>
+         <br>
+         いきなりハードル高いよ、、、<br>
+         と思ったかもしれませんが、大丈夫です。<br><br>
+         工程ごとに分けて、一つ一つしっかり学んでいきましょう！<br><br>
+	</div><!-- /#main -->
+</div><!-- /#contents -->
+<footer>
+	<div class="footmenu">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+		</ul>
+	</div><!-- /.footmenu -->
+	<div class="copyright">Copyright &#169; 2018 xxx Developer All Rights Reserved.</div><!-- /.copyright -->
+</footer>
+
+<div class="totop"><a href="#"><img src="../images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+</body>
+</html>
