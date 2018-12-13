@@ -34,24 +34,40 @@ $(function($){
 			<ul>
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="environment.html">環境構築</a></li>
-        <li><a href="wireFrame.html">ワイヤーフレーム</a></li>
-        <li><a href="header.html">ヘッダー</a></li>
-        <li><a href="footer.html">フッター</a></li>
-        <li><a href="mainVisual.html">メインビジュアル</a></li>
-        <li><a href="main.html">メイン</a></li>
-        <li><a href="modifications.html">サイト仕上げ</a></li>
-        <li><a href="responsive.html">レスポンシブ対応</a></li>
-        <li><a href="siteUpload.html">Webサイト公開</a></li>
-        <li><a href="../index.html">TOPへ戻る</a></li>
+				<li><a href="wireFrame.html">ワイヤーフレーム</a></li>
+				<li><a href="header.html">ヘッダー</a></li>
+				<li><a href="footer.html">フッター</a></li>
+				<li><a href="mainVisual.html">メインビジュアル</a></li>
+				<li><a href="main.html">メイン</a></li>
+				<li><a href="modifications.html">サイト仕上げ</a></li>
+				<li><a href="responsive.html">レスポンシブ対応</a></li>
+				<li><a href="../index.html">TOPへ戻る</a></li>
 			</ul>
 		</nav>
 	</div>
       <div id="main">
          <h2>レスポンシブ対応</h2>
-         <h3>制作画面イメージ</h3>
+         <h3>レスポンシブ対応とは？</h3>
          <br>
-         working...
+				 レスポンシブ対応とは、<strong>利用する端末の画面サイズに対応</strong>して<br>
+				 <strong>レイアウトを適切な形に自動で変更</strong>されるようにすることです。<br>
+				 現在インターネットを利用する際は、スマートフォンやタブレットを利用する人が過半数を占めるため、<br>
+				 Webサイト制作においては非常に重要な対応となっています。<br>
          <br>
+				 <h3>制作画面イメージ</h3>
+         <br>
+				 下記キャプチャを参考に、スマートフォン利用時を考慮してレスポンシブ対応させてください。<br>
+				 <br>
+				 ・メディアクエリを活用して、レスポンシブ対応を実現してください。<br>
+				 ・widthが425px未満の際に、レスポンシブ対応させてください。<br>
+				 ・メディアクエリはCSSの最下部に記述してください。<br>
+				 ・ソーシャルアイコンは非表示にしてください。<br>
+				 ・メインビジュアルは「main-visual-content」（黒い網掛け部）のwidthを100%にしてください。<br>
+				 <br>
+				 <p id="img">
+    				<img src="../images/htmlcss/responsive.png" width="100%"/>
+    		 </p>
+				 <br>
       </div><!-- /#main -->
       <script>
 	      menuDisplay();
