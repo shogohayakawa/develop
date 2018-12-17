@@ -1,96 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="utf-8">
-<title>環境構築</title>
-<meta name="viewport" content="width=device-width">
-<meta name="keywords" content="">
-<meta name="description" content="">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="shortcut icon" href="../images/favicon/favicon.jpeg">
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/script.js"></script>
-<script type="text/javascript" src="../js/mui.js"></script>
-<script type="text/javascript" src="../js/my.js"></script>
-<script type="text/javascript" src="../js/jquery.smoothscroll.js"></script>
-<script type="text/javascript" src="../js/jquery.scrollshow.js"></script>
-<script>
-$(function($){
-	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10});
-	$('.totop').scrollshow({position : 500});
-	});
-</script>
-</head>
-<body>
-<div id="contents">
-	<div id="sub">
-		<header>
-			<h1><font color="white">Java</font></h1>
-			<p class="summary">
-			開発研修サイト
-			</p>
-		</header>
-		<nav>
-			<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
-			<ul>
-        <li><a href="index.html">HOME</a></li>
-				<li><a href="environment.html">環境構築</a></li>
-				<li><a href="javaBasis.html">Java基礎問題</a></li>
-				<li><a href="sugoroku.html">すごろく</a></li>
-				<li><a href="programJissou.html">プログラム実装</a></li>
-        <li><a href="../index.html">TOPへ戻る</a></li>
-			</ul>
-		</nav>
-	</div>
-      <div id="main">
-        <h2>環境構築</h2>
-        <!--1問目-->
-        <h3>JDKインストール</h3>
-				<br>
-				JDKは「Java SE Development Kit」の略で、<strong>Javaでプログラムを作成する際に必要な開発キット</strong>です。<br>
-				<br>
-				<p id="img">
-					 <img src="../images/java/javaEnvironment/jdkImage.jpg" width="100%"/>
-				</p>
-				<br>
-				まずはJDKを自分のPCにインストールしましょう。<br>
-				インストール手順については下記サイトを参考に進めてみてください。<br>
-				<a href="https://techfun.cc/java/windows-jdk-install.html" target="_blank">・ご利用のOSがWindowsの場合</a>
-				<br>
-				<a href="https://techfun.cc/java/mac-jdk-install.html" target="_blank">・ご利用のOSがMacの場合</a>
-				<br><br>
-				※Windowsの場合は「環境変数の設定」という作業が別途必要になります<br>
-				<br>
-				<h3>eclipseインストール</h3>
-				<br>
-				eclipseとはIDE（統合開発環境）というツールに分類されます。<br>
-				IDEとは簡単にお伝えすると、高機能のテキストエディタです。<br>
-				<br>
-				<p id="img">
-					 <img src="../images/java/javaEnvironment/eclipse.jpg" width="100%"/>
-				</p>
-				<br>
-				Javaの開発現場ではeclipseを使用することが一般的なので、使い方を課題の中で覚えてしまいましょう。<br>
-				インストール手順については下記サイトを参考に進めてみてください。<br>
-				<a href="https://techfun.cc/java/windows-eclipse-install.html" target="_blank">・ご利用のOSがWindowsの場合</a>
-				<br>
-				<a href="https://techfun.cc/java/mac-eclipse-install.html" target="_blank">・ご利用のOSがMacの場合</a>
-				<br>
-				<br>
-      </div><!-- /#main -->
-      <script>
-	      menuDisplay();
-      </script>
 
-   </div><!-- /#contents -->
-   <footer>
-	<div class="footmenu">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-		</ul>
-	</div><!-- /.footmenu -->
-	<div class="copyright">Copyright &#169; 2018 xxx Developer All Rights Reserved.</div><!-- /.copyright -->
-</footer>
-<div class="totop"><a href="#"><img src="../images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+<head>
+	<meta charset="utf-8">
+	<title>環境構築</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="shortcut icon" href="../images/favicon/favicon.jpeg">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/mui.js"></script>
+	<script type="text/javascript" src="../js/my.js"></script>
+	<script type="text/javascript" src="../js/jquery.smoothscroll.js"></script>
+	<script type="text/javascript" src="../js/jquery.scrollshow.js"></script>
+	<script>
+		$(function($) {
+			$('html').smoothscroll({
+				easing: 'swing',
+				speed: 1000,
+				margintop: 10
+			});
+			$('.totop').scrollshow({
+				position: 500
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="contents">
+		<div id="sub">
+			<header>
+				<h1>
+					<font color="white">Java</font>
+				</h1>
+				<p class="summary">
+					開発研修サイト
+				</p>
+			</header>
+			<nav>
+				<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="environment.html">環境構築</a></li>
+					<li><a href="javaBasis.html">Java基礎問題</a></li>
+					<li><a href="sugoroku.html">すごろく</a></li>
+					<li><a href="programJissou.html">プログラム実装</a></li>
+					<li><a href="../index.html">TOPへ戻る</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="main">
+			<h2>環境構築</h2>
+			<!--1問目-->
+			<h3>JDKインストール</h3>
+			<br>
+			JDKは「Java SE Development Kit」の略で、<strong>Javaでプログラムを作成する際に必要な開発キット</strong>です。<br>
+			<br>
+			<p id="img">
+				<img src="../images/java/javaEnvironment/jdkImage.jpg" width="100%" />
+			</p>
+			<br>
+			まずはJDKを自分のPCにインストールしましょう。<br>
+			インストール手順については下記サイトを参考に進めてみてください。<br>
+			<a href="https://techfun.cc/java/windows-jdk-install.html" target="_blank">・ご利用のOSがWindowsの場合</a>
+			<br>
+			<a href="https://techfun.cc/java/mac-jdk-install.html" target="_blank">・ご利用のOSがMacの場合</a>
+			<br><br>
+			※Windowsの場合は「環境変数の設定」という作業が別途必要になります<br>
+			<br>
+			<h3>eclipseインストール</h3>
+			<br>
+			eclipseとはIDE（統合開発環境）というツールに分類されます。<br>
+			IDEとは簡単にお伝えすると、高機能のテキストエディタです。<br>
+			<br>
+			<p id="img">
+				<img src="../images/java/javaEnvironment/eclipse.jpg" width="100%" />
+			</p>
+			<br>
+			Javaの開発現場ではeclipseを使用することが一般的なので、使い方を課題の中で覚えてしまいましょう。<br>
+			インストール手順については下記サイトを参考に進めてみてください。<br>
+			<a href="https://techfun.cc/java/windows-eclipse-install.html" target="_blank">・ご利用のOSがWindowsの場合</a>
+			<br>
+			<a href="https://techfun.cc/java/mac-eclipse-install.html" target="_blank">・ご利用のOSがMacの場合</a>
+			<br>
+			<br>
+		</div><!-- /#main -->
+		<script>
+			menuDisplay();
+		</script>
+
+	</div><!-- /#contents -->
+	<footer>
+		<div class="footmenu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+			</ul>
+		</div><!-- /.footmenu -->
+		<div class="copyright">Copyright &#169; 2018 xxx Developer All Rights Reserved.</div><!-- /.copyright -->
+	</footer>
+	<div class="totop"><a href="#"><img src="../images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
 </body>
+
 </html>

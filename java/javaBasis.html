@@ -1,116 +1,126 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8">
-<title>Java基礎問題</title>
-<meta name="viewport" content="width=device-width">
-<meta name="keywords" content="">
-<meta name="description" content="">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="shortcut icon" href="../images/favicon/favicon.jpeg">
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/script.js"></script>
-<script type="text/javascript" src="../js/mui.js"></script>
-<script type="text/javascript" src="../js/my.js"></script>
-<script type="text/javascript" src="../js/jquery.smoothscroll.js"></script>
-<script type="text/javascript" src="../js/jquery.scrollshow.js"></script>
-<script>
-$(function($){
-	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10});
-	$('.totop').scrollshow({position : 500});
-	});
-</script>
+	<meta charset="utf-8">
+	<title>Java基礎問題</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="shortcut icon" href="../images/favicon/favicon.jpeg">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/mui.js"></script>
+	<script type="text/javascript" src="../js/my.js"></script>
+	<script type="text/javascript" src="../js/jquery.smoothscroll.js"></script>
+	<script type="text/javascript" src="../js/jquery.scrollshow.js"></script>
+	<script>
+		$(function($) {
+			$('html').smoothscroll({
+				easing: 'swing',
+				speed: 1000,
+				margintop: 10
+			});
+			$('.totop').scrollshow({
+				position: 500
+			});
+		});
+	</script>
 </head>
+
 <body>
-<div id="contents">
-	<div id="sub">
-		<header>
-			<h1><font color="white">Java</font></h1>
-			<p class="summary">
-			開発研修サイト
-			</p>
-		</header>
-		<nav>
-			<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
-			<ul>
-        <li><a href="index.html">HOME</a></li>
-				<li><a href="environment.html">環境構築</a></li>
-				<li><a href="javaBasis.html">Java基礎問題</a></li>
-				<li><a href="sugoroku.html">すごろく</a></li>
-				<li><a href="programJissou.html">プログラム実装</a></li>
-        <li><a href="../index.html">TOPへ戻る</a></li>
-			</ul>
-		</nav>
-	</div>
-      <div id="main">
-         <h2>Java基礎問題</h2>
-        <!--1問目-->
-        <h3>設問　1</h3>
-        <p>「Hello World.」を画面に表示してください。<br>
-        <br>
-        <img src="../images/java/javaBasis/Question1.PNG" width="400"/></p>
+	<div id="contents">
+		<div id="sub">
+			<header>
+				<h1>
+					<font color="white">Java</font>
+				</h1>
+				<p class="summary">
+					開発研修サイト
+				</p>
+			</header>
+			<nav>
+				<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="environment.html">環境構築</a></li>
+					<li><a href="javaBasis.html">Java基礎問題</a></li>
+					<li><a href="sugoroku.html">すごろく</a></li>
+					<li><a href="programJissou.html">プログラム実装</a></li>
+					<li><a href="../index.html">TOPへ戻る</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="main">
+			<h2>Java基礎問題</h2>
+			<!--1問目-->
+			<h3>設問　1</h3>
+			<p>「Hello World.」を画面に表示してください。<br>
+				<br>
+				<img src="../images/java/javaBasis/Question1.PNG" width="400" /></p>
 
-        <h3>設問　2</h3>
-        <strong>if文</strong><br>
-        <!--キーボードで入力した数字nが偶数か奇数かを判定し、表示する。<br>-->
-        キーボードで入力した整数nが偶数か奇数かを判定し、その結果を表示してください。<br>
-        また、表示する際の文言は画像を参照してください。<br><br>
-        ※メソッド名のあとに下記のように「throws IOException」を追記してください。<br>
-        これは現時点ではあまり気にせず、おまじないの様な物だと思ってください。<br>
-        public static void main(String[] args)<label style = "color:red"> throws IOException </label>{
-        <br>
-        <br>
-        <img src="../images/java/javaBasis/Question2.PNG" width="400" alt="1"/></p>
+			<h3>設問　2</h3>
+			<strong>if文</strong><br>
+			<!--キーボードで入力した数字nが偶数か奇数かを判定し、表示する。<br>-->
+			キーボードで入力した整数nが偶数か奇数かを判定し、その結果を表示してください。<br>
+			また、表示する際の文言は画像を参照してください。<br><br>
+			※メソッド名のあとに下記のように「throws IOException」を追記してください。<br>
+			これは現時点ではあまり気にせず、おまじないの様な物だと思ってください。<br>
+			public static void main(String[] args)<label style="color:red"> throws IOException </label>{
+			<br>
+			<br>
+			<img src="../images/java/javaBasis/Question2.PNG" width="400" alt="1" /></p>
 
-        <h3>設問　3</h3>
-        <strong>for文</strong>
-        <p>キーボードで整数nを入力し、<br>
-        下の画像のように対角線の入った四角形(大きさは n × n)を表示してください。<br>
-        <br>
-        <img src="../images/java/javaBasis/Question3.PNG" width="400"alt="1"/></p>
+			<h3>設問　3</h3>
+			<strong>for文</strong>
+			<p>キーボードで整数nを入力し、<br>
+				下の画像のように対角線の入った四角形(大きさは n × n)を表示してください。<br>
+				<br>
+				<img src="../images/java/javaBasis/Question3.PNG" width="400" alt="1" /></p>
 
-        <h3>設問　4</h3>
-        <p><strong>try～catch～finally文</strong><br>
-        キーボードで整数nを入力し、100/nの結果を表示してください。<br>
-        その後、"終了"を表示してください。<br>
-        ※下記exceptionをcatchした時エラー文を表示してください。<br>
-        ArithmeticException："0で除算できません"<br>
-        NumberFormatException："数字以外が入力されました。"<br>
-        <br>
-        <img src="../images/java/javaBasis/Question4.PNG" width="400" alt="1"/></p>
+			<h3>設問　4</h3>
+			<p><strong>try～catch～finally文</strong><br>
+				キーボードで整数nを入力し、100/nの結果を表示してください。<br>
+				その後、"終了"を表示してください。<br>
+				※下記exceptionをcatchした時エラー文を表示してください。<br>
+				ArithmeticException："0で除算できません"<br>
+				NumberFormatException："数字以外が入力されました。"<br>
+				<br>
+				<img src="../images/java/javaBasis/Question4.PNG" width="400" alt="1" /></p>
 
-        <h3>設問　5</h3>
-        <p><strong>switch文</strong><br>
-        キーボードで0～6を入力し、対応した曜日を表示してください。<br>
-        例：0→日曜日～6→土曜日 <br>
-        switch文を使用してください。<br>
-        <br>
-        <img src="../images/java/javaBasis/Question5.PNG" width="400" alt="1"/></p>
+			<h3>設問　5</h3>
+			<p><strong>switch文</strong><br>
+				キーボードで0～6を入力し、対応した曜日を表示してください。<br>
+				例：0→日曜日～6→土曜日 <br>
+				switch文を使用してください。<br>
+				<br>
+				<img src="../images/java/javaBasis/Question5.PNG" width="400" alt="1" /></p>
 
-        <h3>設問　6</h3>
-        <p><strong>配列</strong><br>
-        文字列を5つ入力し、それらを配列に入れてから再度並べて表示してください。<br>
-        <br>
-        <img src="../images/java/javaBasis/Question6.PNG" width="400" alt="1"/></p>
+			<h3>設問　6</h3>
+			<p><strong>配列</strong><br>
+				文字列を5つ入力し、それらを配列に入れてから再度並べて表示してください。<br>
+				<br>
+				<img src="../images/java/javaBasis/Question6.PNG" width="400" alt="1" /></p>
 
-        <h3>設問　7</h3>
-        <p><strong>ソート</strong><br>
-        整数を5つ入力してそれらを昇順に並べ替えて、<br>
-        並び替えの結果と最大値、最小値を表示してください。<br>
-        ※arrays.sortは使用不可<br>
-        <br>
-        <img src="../images/java/javaBasis/Question7.PNG" width="400" alt="1"/></p>
+			<h3>設問　7</h3>
+			<p><strong>ソート</strong><br>
+				整数を5つ入力してそれらを昇順に並べ替えて、<br>
+				並び替えの結果と最大値、最小値を表示してください。<br>
+				※arrays.sortは使用不可<br>
+				<br>
+				<img src="../images/java/javaBasis/Question7.PNG" width="400" alt="1" /></p>
 
-        <h3>設問　8</h3>
-        <p><strong>メソッド</strong><br>
-        <!--Q2と同様のキーボードから整数 n を入力し，<br>-->
-        設問3と同様のキーボードから整数 n を入力し，<br>
-        以下のような対角線の入った四角形(大きさは n × n)を書いてください。<br>
-        ※ただし main メソッド内は2行以内にしてください<br>
-        ※ヒント：同じクラス内に別メソッドを作成してください<br>
+			<h3>設問　8</h3>
+			<p><strong>メソッド</strong><br>
+				<!--Q2と同様のキーボードから整数 n を入力し，<br>-->
+				設問3と同様のキーボードから整数 n を入力し，<br>
+				以下のような対角線の入った四角形(大きさは n × n)を書いてください。<br>
+				※ただし main メソッド内は2行以内にしてください<br>
+				※ヒント：同じクラス内に別メソッドを作成してください<br>
 
-        例：<br>
-        <pre>
+				例：<br>
+				<pre>
         public class Question8 {
         	public static void main(String[] args) {
         	  ........; // 一行目
@@ -118,20 +128,20 @@ $(function($){
         	}
         }
         </pre>
-        <img src="../images/java/javaBasis/Question8.PNG" width="400" alt="1"/></p>
+				<img src="../images/java/javaBasis/Question8.PNG" width="400" alt="1" /></p>
 
-        <h3>設問　9</h3>
-        <p><strong>戻り値</strong><br>
-        キーボードで整数を2つ入力し、入力した数字の積とそれを2で割った数を求めてください。<br>
-        ※入力値を引数とし計算結果を戻り値として返すメソッドとしてそれぞれ作成してください<br>
-        <br>
-        <img src="../images/java/javaBasis/Question9.PNG" width="400" alt="1"/></p>
+			<h3>設問　9</h3>
+			<p><strong>戻り値</strong><br>
+				キーボードで整数を2つ入力し、入力した数字の積とそれを2で割った数を求めてください。<br>
+				※入力値を引数とし計算結果を戻り値として返すメソッドとしてそれぞれ作成してください<br>
+				<br>
+				<img src="../images/java/javaBasis/Question9.PNG" width="400" alt="1" /></p>
 
-        <h3>設問　10</h3>
-        <strong>コンストラクタ</strong>
-        <p>下記のクラスに引数ありのコンストラクタを追加してください。<br>
-        追加したコンストラクタを利用してインスタンスごとに名前が変えられるようにしてください。<br>
-        <pre>
+			<h3>設問　10</h3>
+			<strong>コンストラクタ</strong>
+			<p>下記のクラスに引数ありのコンストラクタを追加してください。<br>
+				追加したコンストラクタを利用してインスタンスごとに名前が変えられるようにしてください。<br>
+				<pre>
         class Person {
             private String name;
 
@@ -143,15 +153,15 @@ $(function($){
             }
         }
         </pre>
-        <img src="../images/java/javaBasis/Question10.PNG" width="400" alt="1"/></p>
+				<img src="../images/java/javaBasis/Question10.PNG" width="400" alt="1" /></p>
 
 
-        <h3>設問　11</h3>
-        <p><strong>継承</strong><br>
-        下記の親クラスをそのまま使用して下さい。<br>
-        継承機能を使用して子クラスと、メインのメソッド用のクラスを作成し、<br>
-        画像通りに表示してください。<br>
-        <pre>
+			<h3>設問　11</h3>
+			<p><strong>継承</strong><br>
+				下記の親クラスをそのまま使用して下さい。<br>
+				継承機能を使用して子クラスと、メインのメソッド用のクラスを作成し、<br>
+				画像通りに表示してください。<br>
+				<pre>
         class CalculateSuper {
             protected int param1;
             protected int param2;
@@ -175,60 +185,61 @@ $(function($){
             }
         }
         </pre>
-        子クラス：CalculateChild<br>
-        <br>
-        <img src="../images/java/javaBasis/Question11.PNG" width="400" alt="1"/></p>
-        <br>
-        <label style="color:red">※1つ目は足し算から、2つ目は引き算から出すようにしてください。 </label><br><br>
+				子クラス：CalculateChild<br>
+				<br>
+				<img src="../images/java/javaBasis/Question11.PNG" width="400" alt="1" /></p>
+			<br>
+			<label style="color:red">※1つ目は足し算から、2つ目は引き算から出すようにしてください。 </label><br><br>
 
-        <h3>設問　12</h3>
-        <p><strong>インターフェース</strong><br>
-        設問9と同様にキーボードで整数を2つ入力し、<br>
-        入力した数字の積とそれを2で割った数を求めてください。<br>
+			<h3>設問　12</h3>
+			<p><strong>インターフェース</strong><br>
+				設問9と同様にキーボードで整数を2つ入力し、<br>
+				入力した数字の積とそれを2で割った数を求めてください。<br>
 
-        <!--※以下のインタフェースを実装して2倍、2乗の計算を行うクラスを作成すること<br>-->
-        ※以下のインタフェースを実装して入力した数字の積、それを2で割る計算を行うクラスを作成してください<br>
-        <pre>
+				<!--※以下のインタフェースを実装して2倍、2乗の計算を行うクラスを作成すること<br>-->
+				※以下のインタフェースを実装して入力した数字の積、それを2で割る計算を行うクラスを作成してください<br>
+				<pre>
         interface AreaCalc {
         	int sankaku(int a, int b);
 
         	int shikaku(int a, int b);
         }
         </pre>
-        <img src="../images/java/javaBasis/Question12.PNG" width="400 alt="1"/></p>
+				<img src="../images/java/javaBasis/Question12.PNG" width="400 alt=" 1" /></p>
 
-        <h3>設問　13</h3>
-        <p><strong>while</strong><br>
-        入力を2回行い、1回目と2回目の文字が同じかどうか表示してください。<br>
-        1回目と2回目の文字が異なる場合はもう一度入力を促してください。<br>
-        1回目の文字が空文字はもう一度入力を促してください。<br>
-        2回目の文字が空文字はもう一度入力を促してください。<br>
-        <br>
-        <br>
-        <img src="../images/java/javaBasis/Question13.PNG" width="400" alt="1"/></p>
+			<h3>設問　13</h3>
+			<p><strong>while</strong><br>
+				入力を2回行い、1回目と2回目の文字が同じかどうか表示してください。<br>
+				1回目と2回目の文字が異なる場合はもう一度入力を促してください。<br>
+				1回目の文字が空文字はもう一度入力を促してください。<br>
+				2回目の文字が空文字はもう一度入力を促してください。<br>
+				<br>
+				<br>
+				<img src="../images/java/javaBasis/Question13.PNG" width="400" alt="1" /></p>
 
-        <h3>設問　14</h3>
-        <strong>ArrayList</strong>
-        <p>設定したい数だけ値を入力して、これらの平均を表示してください。<br>
-        例：平均を表示したい値を入力してください。<br>
-            平均を表示したい値をすべて入力したら「OK」を入力してください。<br>
-        <br>
-        <img src="../images/java/javaBasis/Question14.PNG" width="400" alt="1"/></p>
-        <br>
-      </div><!-- /#main -->
-      <script>
-	      menuDisplay();
-      </script>
+			<h3>設問　14</h3>
+			<strong>ArrayList</strong>
+			<p>設定したい数だけ値を入力して、これらの平均を表示してください。<br>
+				例：平均を表示したい値を入力してください。<br>
+				平均を表示したい値をすべて入力したら「OK」を入力してください。<br>
+				<br>
+				<img src="../images/java/javaBasis/Question14.PNG" width="400" alt="1" /></p>
+			<br>
+		</div><!-- /#main -->
+		<script>
+			menuDisplay();
+		</script>
 
-   </div><!-- /#contents -->
-   <footer>
-	<div class="footmenu">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-		</ul>
-	</div><!-- /.footmenu -->
-	<div class="copyright">Copyright &#169; 2018 xxx Developer All Rights Reserved.</div><!-- /.copyright -->
-</footer>
-<div class="totop"><a href="#"><img src="../images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+	</div><!-- /#contents -->
+	<footer>
+		<div class="footmenu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+			</ul>
+		</div><!-- /.footmenu -->
+		<div class="copyright">Copyright &#169; 2018 xxx Developer All Rights Reserved.</div><!-- /.copyright -->
+	</footer>
+	<div class="totop"><a href="#"><img src="../images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
 </body>
+
 </html>

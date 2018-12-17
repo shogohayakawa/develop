@@ -1,131 +1,141 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="utf-8">
-<title>Java開発</title>
-<meta name="viewport" content="width=device-width">
-<meta name="keywords" content="">
-<meta name="description" content="">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="shortcut icon" href="../images/favicon/favicon.jpeg">
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/script.js"></script>
-<script type="text/javascript" src="../js/jquery.smoothscroll.js"></script>
-<script type="text/javascript" src="../js/jquery.scrollshow.js"></script>
-<script type="text/javascript" src="../js/jquery.rollover.js"></script>
-<script>
-$(function($){
-	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10});
-	$('.totop').scrollshow({position : 500});
-	$('.slide').slideshow({
-		touch		: true,
-		touchDistance : '80',
-		bgImage	  : false,
-		autoSlide	: true,
-		effect	   : 'slide',
-		repeat	   : true,
-		easing	   : 'swing',
-		interval	 : 3000,
-		duration	 : 500,
-		imgHoverStop : true,
-		navHoverStop : true,
-		navImg	   : false,
-		navImgCustom : false,
-		navImgSuffix : ''
-	});
-	$('.slidePrev img').rollover();
-	$('.slideNext img').rollover();
-	});
 
-</script>
-<!--[if lt IE 9]>
+<head>
+	<meta charset="utf-8">
+	<title>Java開発</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="shortcut icon" href="../images/favicon/favicon.jpeg">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/jquery.smoothscroll.js"></script>
+	<script type="text/javascript" src="../js/jquery.scrollshow.js"></script>
+	<script type="text/javascript" src="../js/jquery.rollover.js"></script>
+	<script>
+		$(function($) {
+			$('html').smoothscroll({
+				easing: 'swing',
+				speed: 1000,
+				margintop: 10
+			});
+			$('.totop').scrollshow({
+				position: 500
+			});
+			$('.slide').slideshow({
+				touch: true,
+				touchDistance: '80',
+				bgImage: false,
+				autoSlide: true,
+				effect: 'slide',
+				repeat: true,
+				easing: 'swing',
+				interval: 3000,
+				duration: 500,
+				imgHoverStop: true,
+				navHoverStop: true,
+				navImg: false,
+				navImgCustom: false,
+				navImgSuffix: ''
+			});
+			$('.slidePrev img').rollover();
+			$('.slideNext img').rollover();
+		});
+	</script>
+	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/css3-mediaqueries.js"></script>
 <![endif]-->
 </head>
+
 <body>
-<div id="contents">
-	<div id="sub">
-		<header>
-			<h1><font color="white">Java</font></h1>
-			<p class="summary">
-			開発研修サイト
+	<div id="contents">
+		<div id="sub">
+			<header>
+				<h1>
+					<font color="white">Java</font>
+				</h1>
+				<p class="summary">
+					開発研修サイト
+				</p>
+			</header>
+			<nav>
+				<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="environment.html">環境構築</a></li>
+					<li><a href="javaBasis.html">Java基礎問題</a></li>
+					<li><a href="sugoroku.html">すごろく</a></li>
+					<li><a href="programJissou.html">プログラム実装</a></li>
+					<li><a href="../index.html">TOPへ戻る</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="main">
+			<h2>HOME</h2>
+			<h3>Javaとは？</h3>
+			<br>
+			Javaは、アプリ開発など幅広い開発に使用されている人気のプログラミング言語です。<br>
+			<br>
+			<p id="img">
+				<img src="../images/java/javaHome/java.jpg" width="100%" />
 			</p>
-		</header>
-		<nav>
-			<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="environment.html">環境構築</a></li>
-				<li><a href="javaBasis.html">Java基礎問題</a></li>
-				<li><a href="sugoroku.html">すごろく</a></li>
-				<li><a href="programJissou.html">プログラム実装</a></li>
-				<li><a href="../index.html">TOPへ戻る</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div id="main">
-		<h2>HOME</h2>
-		 <h3>Javaとは？</h3>
-		 <br>
-     Javaは、アプリ開発など幅広い開発に使用されている人気のプログラミング言語です。<br>
-		 <br>
-		 <p id="img">
-				<img src="../images/java/javaHome/java.jpg" width="100%"/>
-		 </p>
-		 <br>
+			<br>
 			Googleが主に開発に用いている「<strong>Google三大言語(Java、C++、Python)</strong>」のひとつでもあり、応用力のある言語として昔から根強い人気を誇っています。<br>
 			<br>
 			また、大企業での大規模システム開発やAndroidアプリの開発などを得意としています。<br>
 			<br>
 			ちなみに、よく間違われるのですが語呂が似ている<strong>JavaScript</strong>とは全く別の技術です。<br>
-		 <br>
+			<br>
 
-		 <h3>Javaの実行環境</h3>
-		 <br>
-		 Javaの最大の特徴は「<strong>JVM（Java Virtual Machine：Java仮想マシン）</strong>」というもので動いていることです。<br>
-		 Java仮想マシンはその名前の通り、<strong>Javaの為に擬似的に作り出されたマシン</strong>です。<br>
-		 <br>
-		 <p id="img">
-				<img src="../images/java/javaHome/JVM.jpg" width="100%"/>
-		 </p>
-		 <br>
-		 例えるなら、Java仮想マシンは「<strong>コンピュータ本体との通訳者のようなもの</strong>」で、 <br>
-		 Java仮想マシンさえ動作すれば<strong>Javaはどんなコンピュータ上でも利用することが出来ます</strong>。<br>
-		 <br>
-		 Javaで開発することで、たとえ<strong>OSを入れ替えても</strong>プログラムはそのまま使用することが出来るのです。<br>
-		 <br>
+			<h3>Javaの実行環境</h3>
+			<br>
+			Javaの最大の特徴は「<strong>JVM（Java Virtual Machine：Java仮想マシン）</strong>」というもので動いていることです。<br>
+			Java仮想マシンはその名前の通り、<strong>Javaの為に擬似的に作り出されたマシン</strong>です。<br>
+			<br>
+			<p id="img">
+				<img src="../images/java/javaHome/JVM.jpg" width="100%" />
+			</p>
+			<br>
+			例えるなら、Java仮想マシンは「<strong>コンピュータ本体との通訳者のようなもの</strong>」で、 <br>
+			Java仮想マシンさえ動作すれば<strong>Javaはどんなコンピュータ上でも利用することが出来ます</strong>。<br>
+			<br>
+			Javaで開発することで、たとえ<strong>OSを入れ替えても</strong>プログラムはそのまま使用することが出来るのです。<br>
+			<br>
 
-		 <h3>Javaの需要</h3>
-		 <br>
-		 媒体にもよりますが、<strong>2018年現在Javaは堂々のシェア1位</strong>となっています。<br>
-		 <br>
-		 <p id="img">
-				<img src="../images/java/javaHome/javaJuyou1.jpg" width="100%"/>
-		 </p>
-		 <br>
-		 また、下記グラフは2002年以降の各プログラミング言語の人気度をグラフで示しています。<br>
-		 PythonやJavaScriptなどの登場で全体的に右肩下がりになっていますが、それでもJavaの人気は不動のものと言っていいでしょう。<br>
-		 <br>
-		 <p id="img">
-				<img src="../images/java/javaHome/javaJuyou2.jpg" width="100%"/>
-		 </p>
-		 <br>
-		 2000年代に入ると、<strong>Javaがずっと1位を独占</strong>しています。<br>
-		 <br>
-		 沢山の人が使っているということは人気が高いということだけでなく、<strong>技術的に安定</strong>しており（バクなどが見つかっても修正されやすい）、プログラミング学習をする際に<strong>参考にできるサイトなどが多い</strong>ということも表しています。<br>
-		 <br>
-	</div><!-- /#main -->
-</div><!-- /#contents -->
-<footer>
-	<div class="footmenu">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-		</ul>
-	</div><!-- /.footmenu -->
-	<div class="copyright">Copyright &#169; 2018 xxx Developer All Rights Reserved.</div><!-- /.copyright -->
-</footer>
+			<h3>Javaの需要</h3>
+			<br>
+			媒体にもよりますが、<strong>2018年現在Javaは堂々のシェア1位</strong>となっています。<br>
+			<br>
+			<p id="img">
+				<img src="../images/java/javaHome/javaJuyou1.jpg" width="100%" />
+			</p>
+			<br>
+			また、下記グラフは2002年以降の各プログラミング言語の人気度をグラフで示しています。<br>
+			PythonやJavaScriptなどの登場で全体的に右肩下がりになっていますが、それでもJavaの人気は不動のものと言っていいでしょう。<br>
+			<br>
+			<p id="img">
+				<img src="../images/java/javaHome/javaJuyou2.jpg" width="100%" />
+			</p>
+			<br>
+			2000年代に入ると、<strong>Javaがずっと1位を独占</strong>しています。<br>
+			<br>
+			沢山の人が使っているということは人気が高いということだけでなく、<strong>技術的に安定</strong>しており（バクなどが見つかっても修正されやすい）、プログラミング学習をする際に<strong>参考にできるサイトなどが多い</strong>ということも表しています。<br>
+			<br>
+		</div><!-- /#main -->
+	</div><!-- /#contents -->
+	<footer>
+		<div class="footmenu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+			</ul>
+		</div><!-- /.footmenu -->
+		<div class="copyright">Copyright &#169; 2018 xxx Developer All Rights Reserved.</div><!-- /.copyright -->
+	</footer>
 
-<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+	<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
 </body>
+
 </html>

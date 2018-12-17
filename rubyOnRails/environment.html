@@ -1,179 +1,190 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8">
-<title>環境構築</title>
-<meta name="viewport" content="width=device-width">
-<meta name="keywords" content="">
-<meta name="description" content="">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="shortcut icon" href="../images/favicon/favicon.jpeg">
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/script.js"></script>
-<script type="text/javascript" src="../js/mui.js"></script>
-<script type="text/javascript" src="../js/my.js"></script>
-<script type="text/javascript" src="../js/jquery.smoothscroll.js"></script>
-<script type="text/javascript" src="../js/jquery.scrollshow.js"></script>
-<script>
-$(function($){
-	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10});
-	$('.totop').scrollshow({position : 500});
-	});
-</script>
+	<meta charset="utf-8">
+	<title>環境構築</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="shortcut icon" href="../images/favicon/favicon.jpeg">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/mui.js"></script>
+	<script type="text/javascript" src="../js/my.js"></script>
+	<script type="text/javascript" src="../js/jquery.smoothscroll.js"></script>
+	<script type="text/javascript" src="../js/jquery.scrollshow.js"></script>
+	<script>
+		$(function($) {
+			$('html').smoothscroll({
+				easing: 'swing',
+				speed: 1000,
+				margintop: 10
+			});
+			$('.totop').scrollshow({
+				position: 500
+			});
+		});
+	</script>
 </head>
+
 <body>
-<div id="contents">
-	<div id="sub">
-		<header>
-			<h1><font color="white">Ruby on Rails</font></h1>
-			<p class="summary">
-			開発研修サイト
+	<div id="contents">
+		<div id="sub">
+			<header>
+				<h1>
+					<font color="white">Ruby on Rails</font>
+				</h1>
+				<p class="summary">
+					開発研修サイト
+				</p>
+			</header>
+			<nav>
+				<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="environment.html">環境構築</a></li>
+					<li><a href="rails1/index.html">Rails Ⅰ</a></li>
+					<li><a href="rails2/index.html">Rails Ⅱ</a></li>
+					<li><a href="../index.html">TOPへ戻る</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="main">
+			<h2>環境構築</h2>
+			<!--1問目-->
+			<h3>AWS Cloud9とは？</h3>
+			<br>
+			Railsの実行環境は、高機能のクラウドIDEであるCloud9を使っていきます。<br>
+			Cloud9は、ブラウザ上で動作させるIDEで、お手軽に開発を始めることができます。<br>
+			Cloud9を利用することで、下記のようなメリットを享受できます。<br>
+			<br>
+			<strong>・環境構築不要で開発を始めることができる</strong><br>
+			<strong>・ブラウザさえあれば動作する</strong><br>
+			<strong>・エラーが出た際はシェア機能で手軽にデバッグが可能</strong><br>
+			<strong>・低スペックのPCでも動作する</strong><br>
+			<br>
+			また、Cloud9はAmazonに買収され、現在はAWSというクラウドサービスの一部になっています。<br>
+			まずはAWSにアカウント登録することから始めましょう。<br>
+			<br>
+			<h3>AWSの登録</h3>
+			<br>
+			まず、AWSアカウントを作成します。（既にお持ちの方は作業不要です）<br>
+			<br>
+			①<a href="https://aws.amazon.com/jp/" target="_blank">AWSの公式サイト</a>にアクセスして、「今すぐ無料アカウント作成」をクリック<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/01_aws.jpg" width="100%" />
 			</p>
-		</header>
-		<nav>
-			<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
+			<br>
+			②アカウント作成画面でアカウント情報を入力して「続行」をクリック<br>
+			※AWSアカウント名はユーザ名のようなもので、後から変更可能<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/02_aws.jpg" width="100%" />
+			</p>
+			<br>
+			③連絡先情報を入力して「アカウントを作成して続行」をクリック<br>
+			※アカウントの種類は「パーソナル」を選択<br>
+			※フルネームや住所は半角英数字で入力<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/03_aws.jpg" width="100%" />
+			</p>
+			<br>
+			④支払情報を入力して「セキュアな送信」をクリック<br>
+			※クレジットカードがないとAWSアカウントは作成できません<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/04_aws.jpg" width="100%" />
+			</p>
+			<br>
+			⑤電話番号情報を入力し、「すぐに連絡を受ける」をクリック<br>
+			※クリックしたら入力した番号に電話がかかってきます<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/05_aws.jpg" width="100%" />
+			</p>
+			<br>
+			⑥電話を取って、AWS登録画面に表示された4桁の数字を電話のキーパッドに入力する<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/06_aws.jpg" width="100%" />
+			</p>
+			<br>
+			⑦入力されたら下記のように表示が変わるので、「続行」をクリック<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/07_aws.jpg" width="100%" />
+			</p>
+			<br>
+			⑧「ベーシックプラン」の「無料」をクリック<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/08_aws.jpg" width="100%" />
+			</p>
+			<br>
+			⑨登録完了<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/09_aws.png" width="100%" />
+			</p>
+			<br>
+			<h3>Cloud9を使う</h3>
+			<br>
+			①<a href="https://aws.amazon.com/jp/cloud9/?nc2=h_m1" target="_blank">AWS Cloud9</a>にアクセスして、「AWS Cloud9 の使用を開始する」をクリック<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/01_cloud9.jpg" width="100%" />
+			</p>
+			<br>
+			②先ほど登録したAWSのメールアドレスとパスワードを入力し、Cloud9へログイン<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/02_cloud9.jpg" width="100%" />
+			</p>
+			<br>
+			③「Create environment」をクリックし、新しい環境を作成する<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/03_cloud9.jpg" width="100%" />
+			</p>
+			<br>
+			④「環境の名前」「環境の説明(任意)」を入力し、「Next step」をクリック<br>
+			※これらの情報は後ほど変更可能です<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/04_cloud9.jpg" width="100%" />
+			</p>
+			<br>
+			⑤環境設定は特に変更せず、「Next step」をクリック<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/05_cloud9.jpg" width="100%" />
+			</p>
+			<br>
+			⑥設定内容を確認し、「Create environment」をクリック<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/06_cloud9.jpg" width="100%" />
+			</p>
+			<br>
+			⑦環境セットアップ中（数分かかる場合あり）<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/07_cloud9.png" width="100%" />
+			</p>
+			<br>
+			⑧環境セットアップ完了<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/08_cloud9.png" width="100%" />
+			</p>
+			<br>
+			※画面構成について<br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsEnvironment/09_cloud9.png" width="100%" />
+			</p>
+			<br>
+		</div><!-- /#main -->
+		<script>
+			menuDisplay();
+		</script>
+
+	</div><!-- /#contents -->
+	<footer>
+		<div class="footmenu">
 			<ul>
 				<li><a href="index.html">HOME</a></li>
-				<li><a href="environment.html">環境構築</a></li>
-				<li><a href="rails1/index.html">Rails Ⅰ</a></li>
-				<li><a href="rails2/index.html">Rails Ⅱ</a></li>
-				<li><a href="../index.html">TOPへ戻る</a></li>
 			</ul>
-		</nav>
-	</div>
-      <div id="main">
-        <h2>環境構築</h2>
-        <!--1問目-->
-        <h3>AWS Cloud9とは？</h3>
-				<br>
-				Railsの実行環境は、高機能のクラウドIDEであるCloud9を使っていきます。<br>
-        Cloud9は、ブラウザ上で動作させるIDEで、お手軽に開発を始めることができます。<br>
-        Cloud9を利用することで、下記のようなメリットを享受できます。<br>
-        <br>
-        <strong>・環境構築不要で開発を始めることができる</strong><br>
-        <strong>・ブラウザさえあれば動作する</strong><br>
-        <strong>・エラーが出た際はシェア機能で手軽にデバッグが可能</strong><br>
-        <strong>・低スペックのPCでも動作する</strong><br>
-        <br>
-        また、Cloud9はAmazonに買収され、現在はAWSというクラウドサービスの一部になっています。<br>
-        まずはAWSにアカウント登録することから始めましょう。<br>
-        <br>
-        <h3>AWSの登録</h3>
-        <br>
-        まず、AWSアカウントを作成します。（既にお持ちの方は作業不要です）<br>
-        <br>
-        ①<a href="https://aws.amazon.com/jp/" target="_blank">AWSの公式サイト</a>にアクセスして、「今すぐ無料アカウント作成」をクリック<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/01_aws.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ②アカウント作成画面でアカウント情報を入力して「続行」をクリック<br>
-        ※AWSアカウント名はユーザ名のようなもので、後から変更可能<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/02_aws.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ③連絡先情報を入力して「アカウントを作成して続行」をクリック<br>
-        ※アカウントの種類は「パーソナル」を選択<br>
-        ※フルネームや住所は半角英数字で入力<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/03_aws.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ④支払情報を入力して「セキュアな送信」をクリック<br>
-        ※クレジットカードがないとAWSアカウントは作成できません<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/04_aws.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ⑤電話番号情報を入力し、「すぐに連絡を受ける」をクリック<br>
-        ※クリックしたら入力した番号に電話がかかってきます<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/05_aws.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ⑥電話を取って、AWS登録画面に表示された4桁の数字を電話のキーパッドに入力する<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/06_aws.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ⑦入力されたら下記のように表示が変わるので、「続行」をクリック<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/07_aws.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ⑧「ベーシックプラン」の「無料」をクリック<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/08_aws.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ⑨登録完了<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/09_aws.png" width="100%"/>
-   		  </p>
-        <br>
-        <h3>Cloud9を使う</h3>
-        <br>
-        ①<a href="https://aws.amazon.com/jp/cloud9/?nc2=h_m1" target="_blank">AWS Cloud9</a>にアクセスして、「AWS Cloud9 の使用を開始する」をクリック<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/01_cloud9.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ②先ほど登録したAWSのメールアドレスとパスワードを入力し、Cloud9へログイン<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/02_cloud9.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ③「Create environment」をクリックし、新しい環境を作成する<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/03_cloud9.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ④「環境の名前」「環境の説明(任意)」を入力し、「Next step」をクリック<br>
-        ※これらの情報は後ほど変更可能です<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/04_cloud9.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ⑤環境設定は特に変更せず、「Next step」をクリック<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/05_cloud9.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ⑥設定内容を確認し、「Create environment」をクリック<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/06_cloud9.jpg" width="100%"/>
-   		  </p>
-        <br>
-        ⑦環境セットアップ中（数分かかる場合あり）<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/07_cloud9.png" width="100%"/>
-   		  </p>
-        <br>
-        ⑧環境セットアップ完了<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/08_cloud9.png" width="100%"/>
-   		  </p>
-        <br>
-        ※画面構成について<br>
-        <p id="img">
-   				<img src="../images/rubyOnRails/railsEnvironment/09_cloud9.png" width="100%"/>
-   		  </p>
-        <br>
-      </div><!-- /#main -->
-      <script>
-	      menuDisplay();
-      </script>
-
-   </div><!-- /#contents -->
-   <footer>
-	<div class="footmenu">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-		</ul>
-	</div><!-- /.footmenu -->
-	<div class="copyright">Copyright &#169; 2018 xxx Developer All Rights Reserved.</div><!-- /.copyright -->
-</footer>
-<div class="totop"><a href="#"><img src="../images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+		</div><!-- /.footmenu -->
+		<div class="copyright">Copyright &#169; 2018 xxx Developer All Rights Reserved.</div><!-- /.copyright -->
+	</footer>
+	<div class="totop"><a href="#"><img src="../images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
 </body>
+
 </html>
