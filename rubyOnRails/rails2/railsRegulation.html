@@ -66,9 +66,63 @@
 			<h2>不正データ制限機能</h2>
 			<h3>制作イメージ</h3>
 			<br>
+			・想定外のデータが入力された際のチェックとして、<strong>不正データ制限機能</strong>を作成してください。<br>
+			・正常に<strong>新規投稿</strong>、<strong>投稿編集</strong>、<strong>投稿削除</strong>が処理された際の、<strong>サクセスメッセージ</strong>を作成してください。<br>
+			<br>
+			<strong>1. 新規投稿</strong><br>
+			<strong>1-1. 空の投稿の場合</strong><br>
 			<p id="img">
-				<img src="../../images/comingSoon.jpg" width="100%" />
+				<img src="../../images/rubyOnRails/railsRegulation/railsRegulation1.jpg" width="100%" />
 			</p>
+			<br>
+			<strong>1-2. 140文字を超える投稿の場合</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsRegulation/railsRegulation2.jpg" width="100%" />
+			</p>
+			<br>
+			<strong>1-3. 新規投稿成功時</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsRegulation/railsRegulation3.jpg" width="100%" />
+			</p>
+			<br>
+			<strong>2. 投稿編集</strong><br>
+			<strong>2-1. 空の投稿の場合</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsRegulation/railsRegulation4.jpg" width="100%" />
+			</p>
+			<br>
+			<strong>2-2. 140文字を超える投稿の場合</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsRegulation/railsRegulation5.jpg" width="100%" />
+			</p>
+			<br>
+			<strong>2-3. 投稿編集成功時</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsRegulation/railsRegulation6.jpg" width="100%" />
+			</p>
+			<br>
+			<strong>3. 投稿削除成功時</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsRegulation/railsRegulation7.jpg" width="100%" />
+			</p>
+			<br>
+			【投稿失敗時】<br>
+			◆<strong>Postモデル</strong>を修正し、<strong>新規投稿</strong>及び<strong>投稿編集</strong>時に下記どちらかに該当する場合は、<strong>投稿内容をデータベースに保存せずにエラーメッセージを表示</strong>するようにしてください。<br>
+			・空の投稿の場合<br>
+			・140文字を超える投稿の場合<br>
+			◆application.html.erbに、<strong>flash[:notice]に代入されたメッセージを表示するHTMLを追加</strong>してください。クラス名は<strong>"flash"</strong>としてください。<br>
+			◆英語（デフォルト）のエラーメッセージを<strong>日本語化</strong>し、下記の通り修正してください。<br>
+			・空の投稿の場合：contentを入力してください<br>
+			・140文字を超える投稿の場合：Contentは140文字以内で入力してください<br>
+			◆<strong>render</strong>メソッドを使用して、エラー投稿時は編集フォームに戻り、<strong>直前に編集していた投稿内容が表示</strong>されるようにしてください。<br>
+			<br>
+			【投稿成功時】<br>
+			◆<strong>flash</strong>メソッドを使用して、<strong>新規投稿</strong>及び<strong>投稿編集</strong>、<strong>投稿削除</strong>の成功時に<strong>サクセスメッセージ</strong>を表示してください。ただし、<strong>サクセスメッセージは処理直後だけ表示（フラッシュ）</strong>して、それ以降は表示しないようにしてください。<br>
+			◆new.html.erb、edit.html.erbに、<strong>エラーメッセージを表示するHTMLを追加</strong>してください。クラス名は<strong>"form-error"</strong>としてください。<br>
+			◆サクセスメッセージは、下記の通りにしてください。<br>
+			・新規投稿：投稿を作成しました<br>
+			・投稿編集：投稿を編集しました<br>
+			・投稿削除：投稿を削除しました<br>
 			<br>
 		</div><!-- /#main -->
 		<script>
