@@ -66,8 +66,38 @@
 			<h2>ユーザー管理機能</h2>
 			<h3>制作イメージ</h3>
 			<br>
+			ユーザー管理するための下記4つの機能を作成してください。<br>
+			・<strong>ユーザー一覧ページ</strong><br>
+			・<strong>ユーザー詳細ページ</strong><br>
+			・<strong>新規ユーザー登録ページ</strong><br>
+			・<strong>ユーザー編集ページ</strong><br>
+			<br>
+			<strong>作成中</strong><br>
 			<p id="img">
 				<img src="../../images/comingSoon.jpg" width="100%" />
+			</p>
+			<br>
+			◆下記の通り、<strong>テーブル</strong>を準備してください。<br>
+			・テーブル名：User<br>
+			・ユーザー名：カラム名 name／データ型 string<br>
+			・メールアドレス：カラム名 email／データ型 string<br>
+			◆<strong>Userモデル</strong>に<strong>バリデーション</strong>を追加し、下記に該当する場合は<strong>投稿内容をデータベースに保存せずにエラーメッセージを表示</strong>するようにしてください。<br>
+			・ユーザー名：空の投稿の場合<br>
+			・メールアドレス：<br>
+			- 空の投稿の場合<br>
+			- 入力されたメールアドレスが既にデータベースに登録済みの場合<br>
+			◆画面上の右上のメニューブロックに、「ユーザー一覧」のリンクを追加してください。<br>
+			◆<strong>サクセスメッセージ</strong>は、下記の通りにしてください。<br>
+			・新規ユーザー登録：ユーザー登録が完了しました<br>
+			・ユーザー編集：ユーザー情報を編集しました<br>
+			◆HTML/CSSは下記ファイルをベースとして使用してください。<br>
+			◆URL、コントローラ名、アクション名は下記のルーティング表に従って作成してください。<br>
+			<br>
+			・<a href="../../files/rubyOnRails/railsUserManagement.zip">HTML/CSSダウンロード</a><br>
+			<br>
+			<strong>ルーティング表</strong>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsUserManagement/routingTable.jpg" width="100%" />
 			</p>
 			<br>
 		</div><!-- /#main -->

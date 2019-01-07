@@ -107,7 +107,7 @@
 			</p>
 			<br>
 			【投稿失敗時】<br>
-			◆<strong>Postモデル</strong>を修正し、<strong>新規投稿</strong>及び<strong>投稿編集</strong>時に下記どちらかに該当する場合は、<strong>投稿内容をデータベースに保存せずにエラーメッセージを表示</strong>するようにしてください。<br>
+			◆<strong>Postモデル</strong>に<strong>バリデーション</strong>を追加し、<strong>新規投稿時</strong>及び<strong>投稿編集時</strong>に下記に該当する場合は、<strong>投稿内容をデータベースに保存せずにエラーメッセージを表示</strong>するようにしてください。<br>
 			・空の投稿の場合<br>
 			・140文字を超える投稿の場合<br>
 			◆application.html.erbに、<strong>flash[:notice]に代入されたメッセージを表示するHTMLを追加</strong>してください。クラス名は<strong>"flash"</strong>としてください。<br>
