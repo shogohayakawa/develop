@@ -66,9 +66,32 @@
 			<h2>プロフィール画像設定機能</h2>
 			<h3>制作イメージ</h3>
 			<br>
+			<strong>プロフィール画像設定機能</strong>を作成してください。<br>
+			<br>
+			<strong>キャプチャ作成中</strong><br>
 			<p id="img">
 				<img src="../../images/comingSoon.jpg" width="100%" />
 			</p>
+			<br>
+			【デフォルト画像表示】<br>
+			◆Userテーブルに<strong>下記カラムを追加</strong>してください。<br>
+			・マイグレーションファイル名：add_image_name_to_users<br>
+			・カラム名：image_name<br>
+			・データ型：string<br>
+			◆tweet_app/publicフォルダ直下に「<strong>user_images</strong>」フォルダを作成し、<strong>その中にプロフィール画像を保存</strong>するようにしてください。<br>
+			◆<strong>新規ユーザー登録された際に初期画像が設定</strong>されるようにしてください。画像は下記ダウンロードファイル内の「<strong>default_user.jpg</strong>」としてください。<br>
+			◆/users/index.html.erbの&lt;div class="users-index-item"&gt;の直後に以下のコードを貼り付け、<strong>プロフィール画像表示</strong>されるよう編集してください。<br>
+			※貼り付けコード：&lt;div class="user-left"&gt;&lt;!-- &lt;img&gt;タグを用いて、プロフィール画像を表示してください --&gt;&lt;/div&gt;<br>
+			◆/users/show.html.erbの&lt;div class="user"&gt;の直後に、&lt;img&gt;タグを使用して<strong>プロフィール画像表示</strong>されるよう編集してください。<br>
+			◆初期設定画像は下記リンクからダウンロードし、使用してください。<br>
+			<br>
+			【プロフィール画像編集】<br>
+			◆ユーザー編集ページのユーザー名とメールアドレスの間に<strong>プロフィール画像のアップロードフォームを作成</strong>してください。<br>
+			◆ファイル名をデータベースへ保存する際、ファイル名は「<strong>ユーザーid.jpg</strong>」となるようにしてください。<br>
+			※Ex）idが「1」の場合：「1.jpg」<br>
+			◆users_controller.rbで画像を保存する処理は、<strong>フォームから画像データが送信された場合だけ実行</strong>されるようにしてください。<br>
+			<br>
+			・<a href="../../files/rubyOnRails/railsProfileImageSetting.zip">画像ダウンロード</a><br>
 			<br>
 		</div><!-- /#main -->
 		<script>
