@@ -110,7 +110,7 @@
 			◆<strong>Postモデル</strong>に<strong>バリデーション</strong>を追加し、<strong>新規投稿時</strong>及び<strong>投稿編集時</strong>に下記に該当する場合は、<strong>投稿内容をデータベースに保存せずにエラーメッセージを表示</strong>するようにしてください。<br>
 			・空の投稿の場合<br>
 			・140文字を超える投稿の場合<br>
-			◆application.html.erbに、<strong>flash[:notice]に代入されたメッセージを表示するHTMLを追加</strong>してください。クラス名は<strong>"flash"</strong>としてください。<br>
+			◆下記ダウンロードファイルのerror_message.htmlのソースを、new.html.erb／edit.html.erbの&lt;div class="form-body"&gt;の直後に貼り付け、<strong>エラーメッセージ表示領域を作成</strong>してください。<br>
 			◆英語（デフォルト）のエラーメッセージを<strong>日本語化</strong>し、下記の通り修正してください。<br>
 			・空の投稿の場合：contentを入力してください<br>
 			・140文字を超える投稿の場合：Contentは140文字以内で入力してください<br>
@@ -118,11 +118,13 @@
 			<br>
 			【投稿成功時】<br>
 			◆<strong>flash</strong>メソッドを使用して、<strong>新規投稿</strong>及び<strong>投稿編集</strong>、<strong>投稿削除</strong>の成功時に<strong>サクセスメッセージ</strong>を表示してください。ただし、<strong>サクセスメッセージは処理直後だけ表示（フラッシュ）</strong>して、それ以降は表示しないようにしてください。<br>
-			◆new.html.erb、edit.html.erbに、<strong>エラーメッセージを表示するHTMLを追加</strong>してください。クラス名は<strong>"form-error"</strong>としてください。<br>
+			◆下記ダウンロードファイルのflash.htmlのソースを、application.html.erbの&lt;header&gt;閉じタグの直後に貼り付け、<strong>サクセスメッセージ表示領域を作成</strong>してください。<br>
 			◆サクセスメッセージは、下記の通りにしてください。<br>
 			・新規投稿：投稿を作成しました<br>
 			・投稿編集：投稿を編集しました<br>
 			・投稿削除：投稿を削除しました<br>
+			<br>
+			・<a href="../../files/rubyOnRails/railsRegulation.zip">HTMLダウンロード</a><br>
 			<br>
 		</div><!-- /#main -->
 		<script>
