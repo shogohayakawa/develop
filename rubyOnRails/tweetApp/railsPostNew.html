@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>投稿削除機能</title>
+	<title>新規投稿ページ</title>
 	<meta name="viewport" content="width=device-width">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -53,7 +53,8 @@
 					<li><a href="railsRegulation.html">不正データ制限機能</a></li>
 					<li><a href="railsUserManagement.html">ユーザー管理機能</a></li>
 					<li><a href="railsProfileImageSetting.html">プロフィール画像設定機能</a></li>
-					<li><a href="railsLoginLogout.html">ログイン・ログアウト機能</a></li>
+					<li><a href="railsLoginLogout1.html">ログイン・ログアウト機能 Ⅰ</a></li>
+					<li><a href="railsLoginLogout2.html">ログイン・ログアウト機能 Ⅱ</a></li>
 					<li><a href="railsUserMapping.html">投稿ユーザーマッピング機能</a></li>
 					<li><a href="railsGood.html">「いいね！」機能</a></li>
 					<li><a href="railsOther.html">その他追加機能</a></li>
@@ -63,33 +64,40 @@
 			</nav>
 		</div>
 		<div id="main">
-			<h2>投稿削除機能</h2>
+			<h2>新規投稿ページ</h2>
 			<h3>制作イメージ</h3>
 			<br>
-			<strong>投稿編集機能</strong>を作成してください。<br>
+			<strong>新規投稿ページ</strong>を作成し、<strong>新規投稿機能</strong>を作成してください。<br>
 			<br>
-			<strong>1. 投稿一覧ページ_削除前</strong><br>
+			<strong>1. 任意のページ</strong><br>
 			<p id="img">
-				<img src="../../images/rubyOnRails/railsPostDelete/railsPostDelete1.jpg" width="100%" />
+				<img src="../../images/rubyOnRails/railsPostNew/railsPostNew1.jpg" width="100%" />
 			</p>
 			<br>
-			<strong>2. 投稿詳細ページ_投稿削除</strong><br>
+			<strong>2. 新規投稿ページ</strong><br>
 			<p id="img">
-				<img src="../../images/rubyOnRails/railsPostDelete/railsPostDelete2.jpg" width="100%" />
+				<img src="../../images/rubyOnRails/railsPostNew/railsPostNew2.jpg" width="100%" />
 			</p>
 			<br>
-			<strong>3. 投稿一覧ページ_削除後</strong><br>
+			<strong>3. 投稿一覧ページ</strong><br>
 			<p id="img">
-				<img src="../../images/rubyOnRails/railsPostDelete/railsPostDelete3.jpg" width="100%" />
+				<img src="../../images/rubyOnRails/railsPostNew/railsPostNew3.jpg" width="100%" />
 			</p>
 			<br>
-			◆show.html.erbの"post-menus"クラス内の編集リンクの直後に、<strong>投稿削除リンク</strong>を作成してください。<br>
-			◆投稿編集データをデータベースへ保存後、<strong>投稿一覧ページへリダイレクト</strong>するようにしてください。<br>
+			【新規投稿ページ作成】<br>
+			◆<strong>form_tag</strong>メソッドを使用して、新規投稿データをformの入力値を<strong>データベースへ保存</strong>するようにしてください。<br>
+			◆新規投稿データをデータベースへ保存後、<strong>投稿一覧ページへリダイレクト</strong>するようにしてください。<br>
+			◆画面上の右上のメニューブロックに、「新規投稿」のリンクを追加してください。<br>
+			<br>
+			【その他】<br>
+			◆HTMLは下記ファイルをベースとして使用してください。<br>
 			◆URL、コントローラ名、アクション名は下記のルーティング表に従って作成してください。<br>
+			<br>
+			・<a href="../../files/rubyOnRails/railsPostNew.zip">HTMLダウンロード</a><br>
 			<br>
 			<strong>ルーティング表</strong>
 			<p id="img">
-				<img src="../../images/rubyOnRails/railsPostDelete/routingTable.jpg" width="100%" />
+				<img src="../../images/rubyOnRails/railsPostNew/routingTable.jpg" width="100%" />
 			</p>
 			<br>
 		</div><!-- /#main -->

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>投稿一覧ページ</title>
+	<title>投稿削除機能</title>
 	<meta name="viewport" content="width=device-width">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -53,7 +53,8 @@
 					<li><a href="railsRegulation.html">不正データ制限機能</a></li>
 					<li><a href="railsUserManagement.html">ユーザー管理機能</a></li>
 					<li><a href="railsProfileImageSetting.html">プロフィール画像設定機能</a></li>
-					<li><a href="railsLoginLogout.html">ログイン・ログアウト機能</a></li>
+					<li><a href="railsLoginLogout1.html">ログイン・ログアウト機能 Ⅰ</a></li>
+					<li><a href="railsLoginLogout2.html">ログイン・ログアウト機能 Ⅱ</a></li>
 					<li><a href="railsUserMapping.html">投稿ユーザーマッピング機能</a></li>
 					<li><a href="railsGood.html">「いいね！」機能</a></li>
 					<li><a href="railsOther.html">その他追加機能</a></li>
@@ -63,35 +64,36 @@
 			</nav>
 		</div>
 		<div id="main">
-			<h2>投稿一覧ページ</h2>
+			<h2>投稿削除機能</h2>
 			<h3>制作イメージ</h3>
 			<br>
-			<strong>投稿一覧ページ</strong>を作成してください。<br>
+			<strong>投稿編集機能</strong>を作成してください。<br>
 			<br>
-			<strong>投稿一覧ページ</strong><br>
+			<strong>1. 投稿一覧ページ_削除前</strong><br>
 			<p id="img">
-				<img src="../../images/rubyOnRails/railsPostList/railsPostList.png" width="100%" />
+				<img src="../../images/rubyOnRails/railsPostDelete/railsPostDelete1.jpg" width="100%" />
 			</p>
 			<br>
-			◆下記の通り、<strong>テーブル</strong>を準備してください。<br>
-			・テーブル名：Post<br>
-			・投稿データ：カラム名 content／データ型 text<br>
-			◆「<strong>rails console</strong>」を使用して任意の投稿データをいくつか作成し、データベースへ保存してください。<br>
-			◆<strong>postsコントローラ</strong>は<strong>railsコマンド</strong>を使用して作成してください。<br>
-			◆投稿データ表示には、変数及び<strong>スクリプトレット</strong>（<strong><% %></strong>, <strong><%= %></strong>）を使用してください。<br>
-			◆投稿データ表示には、<strong>each文</strong>を使用してください。<br>
-			◆投稿一覧ページの表示が、<strong>上から新しい順に投稿データを表示</strong>するように修正してください。<br>
-			◆画面上の右上のメニューブロックに、「投稿一覧」のリンクを追加してください。<br>
-			◆画面上の「TweetApp」、「TweetAppとは？」、「投稿一覧」のリンクには、「<strong>link_to</strong>」メソッドを使用してください。<br>
-			◆TOPページ、アプリ概要ページ、投稿一覧ページの<strong>共通レイアウト</strong>（headerブロック）を纏めてください。<br>
-			◆HTML/CSSは下記ファイルをベースとして使用してください。<br>
-			◆URL、コントローラ名、アクション名は下記のルーティング表に従って作成してください。<br>
+			<strong>2. 投稿詳細ページ_投稿削除</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsPostDelete/railsPostDelete2.jpg" width="100%" />
+			</p>
 			<br>
-			・<a href="../../files/rubyOnRails/railsPostList.zip">HTML/CSSダウンロード</a><br>
+			<strong>3. 投稿一覧ページ_削除後</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsPostDelete/railsPostDelete3.jpg" width="100%" />
+			</p>
+			<br>
+			【投稿削除機能作成】<br>
+			◆show.html.erbの"post-menus"クラス内の編集リンクの直後に、<strong>投稿削除リンク</strong>を作成してください。<br>
+			◆投稿編集データをデータベースへ保存後、<strong>投稿一覧ページへリダイレクト</strong>するようにしてください。<br>
+			<br>
+			【その他】<br>
+			◆URL、コントローラ名、アクション名は下記のルーティング表に従って作成してください。<br>
 			<br>
 			<strong>ルーティング表</strong>
 			<p id="img">
-				<img src="../../images/rubyOnRails/railsPostList/routingTable.jpg" width="100%" />
+				<img src="../../images/rubyOnRails/railsPostDelete/routingTable.jpg" width="100%" />
 			</p>
 			<br>
 		</div><!-- /#main -->
