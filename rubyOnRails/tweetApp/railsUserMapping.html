@@ -67,9 +67,60 @@
 			<h2>投稿ユーザーマッピング機能</h2>
 			<h3>制作イメージ</h3>
 			<br>
+			<strong>投稿</strong>と<strong>ユーザー</strong>の<strong>マッピング機能</strong>を作成してください。<br>
+			<br>
+			<strong>1. 投稿一覧ページ</strong><br>
 			<p id="img">
-				<img src="../../images/comingSoon.jpg" width="100%" />
+				<img src="../../images/rubyOnRails/railsUserMapping/railsUserMapping1.jpg" width="100%" />
 			</p>
+			<br>
+			<strong>2. ユーザー詳細ページ</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsUserMapping/railsUserMapping2.jpg" width="100%" />
+			</p>
+			<br>
+			<strong>3. 投稿詳細ページ</strong><br>
+			<strong>3-1. ログインユーザーの投稿</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsUserMapping/railsUserMapping3.jpg" width="100%" />
+			</p>
+			<br>
+			<strong>3-2. ログインユーザー以外の投稿</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsUserMapping/railsUserMapping4.jpg" width="100%" />
+			</p>
+			<br>
+			【カラム追加】<br>
+			◆<strong>Postテーブル</strong>に<strong>下記カラムを追加</strong>してください。<br>
+			・マイグレーションファイル名：add_user_id_to_posts<br>
+			・カラム名：user_id<br>
+			・データ型：integer<br>
+			◆<strong>Postモデル</strong>に<strong>バリデーション</strong>を追加し、下記に該当する場合は<strong>投稿内容をデータベースに保存せずにエラーメッセージを表示</strong>するようにしてください。<br>
+			・ユーザーIDが空の場合<br>
+			<br>
+			【新規投稿とログインユーザーの紐付け】<br>
+			◆<strong>新規投稿時</strong>、<strong>ログインユーザーのid</strong>を<strong>Postテーブルに保存</strong>するようにしてください。<br>
+			◆投稿詳細ページへの修正<br>
+			・<strong>Postモデル</strong>に、<strong>投稿に紐付くユーザー情報を呼び出す</strong>ための<strong>インスタンスメソッド</strong>を定義してください。<br>
+			・下記ダウンロードファイルの【posts】show.htmlのソースを、/posts/show.html.erbの&lt;div class="posts-show-item"&gt;の直後に貼り付けてください。<br>
+			・投稿詳細ページに「<strong>投稿ユーザーのプロフィール画像</strong>」と「<strong>ユーザー名</strong>」が表示されるようにしてください。<br>
+			・「<strong>ユーザー名</strong>」をクリックすると、<strong>ユーザー詳細ページへ遷移</strong>するようにしてください。<br>
+			◆投稿一覧ページへの修正<br>
+			・/posts/index.html.erbの&lt;div class="posts-index-item"&gt;&lt;/div&gt;の間のソースを全削除し、下記ダウンロードファイルの【posts】index.htmlのソースを貼り付けてください。<br>
+			・投稿一覧ページに「<strong>投稿ユーザーのプロフィール画像</strong>」と「<strong>ユーザー名</strong>」が表示されるようにしてください。<br>
+			・「<strong>ユーザー名</strong>」をクリックすると、<strong>ユーザー詳細ページへ遷移</strong>するようにしてください。<br>
+			◆ユーザー詳細ページへの修正<br>
+			・<strong>Userモデル</strong>に、<strong>whereメソッド</strong>を利用して、<strong>ログインユーザーに紐付く全ての投稿を呼び出す</strong>ための<strong>インスタンスメソッド</strong>を定義してください。<br>
+			・下記ダウンロードファイルの【users】show.htmlのソースを、/users/show.html.erbの&lt;div class="user"&gt;閉じタグの直後に貼り付けてください。その後、/posts/index.html.erbのeach文の中のコードをコピーし、/users/show.html.erbのeach文の中に貼り付けてください。<br>
+			<br>
+			【投稿内容の編集及び削除の制御】<br>
+			◆投稿詳細ページで、ログインユーザーの投稿以外の場合には、<strong>編集及び削除リンクを表示しない</strong>ようにしてください。<br>
+			◆ログインユーザーの投稿以外の場合には、<strong>URLを直接入力してもアクセスできない</strong>ようにしてください。<br>
+			◆<strong>アクセス制御メッセージ</strong>は、下記の通りにしてください。<br>
+			・権限がありません<br>
+			<br>
+			・<a href="../../files/rubyOnRails/railsUserMapping.zip">HTMLダウンロード</a><br>
+			<br>
 			<br>
 		</div><!-- /#main -->
 		<script>
