@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>投稿一覧ページ</title>
+	<title>「いいね！」機能</title>
 	<meta name="viewport" content="width=device-width">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -64,47 +64,66 @@
 			</nav>
 		</div>
 		<div id="main">
-			<h2>投稿一覧ページ</h2>
+			<h2>「いいね！」機能</h2>
 			<h3>制作イメージ</h3>
 			<br>
-			<strong>投稿一覧ページ</strong>を作成してください。<br>
+			<strong>「いいね！」機能</strong>を作成してください。<br>
 			<br>
-			<strong>1. 任意のページ</strong><br>
+			<strong>1. 投稿詳細ページ</strong><br>
+			<strong>1-1. いいね前</strong><br>
 			<p id="img">
-				<img src="../../images/rubyOnRails/railsPostList/railsPostList1.jpg" width="100%" />
+				<img src="../../images/rubyOnRails/railsLikes/railsLikes1.jpg" width="100%" />
 			</p>
 			<br>
-			<strong>2. 投稿一覧ページ</strong><br>
+			<strong>1-2. いいね後</strong><br>
 			<p id="img">
-				<img src="../../images/rubyOnRails/railsPostList/railsPostList2.jpg" width="100%" />
+				<img src="../../images/rubyOnRails/railsLikes/railsLikes2.jpg" width="100%" />
+			</p>
+			<br>
+			<strong>2. ユーザー詳細ページ</strong><br>
+			<strong>2-1. 投稿一覧表示</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsLikes/railsLikes3.jpg" width="100%" />
+			</p>
+			<br>
+			<strong>2-2. いいね！投稿一覧表示</strong><br>
+			<p id="img">
+				<img src="../../images/rubyOnRails/railsLikes/railsLikes4.jpg" width="100%" />
 			</p>
 			<br>
 			【テーブル追加】<br>
 			◆下記の通り、<strong>モデル</strong>及び<strong>テーブル</strong>を準備してください。<br>
-			・モデル名：Post<br>
-			・テーブル名：posts<br>
+			・モデル名：Like<br>
+			・テーブル名：likes<br>
 			・カラム<br>
-			- 投稿データ：カラム名 content／データ型 text<br>
-			◆「<strong>rails console</strong>」を使用して任意の投稿データをいくつか作成し、データベースへ保存してください。<br>
+			- ユーザーID：カラム名 user_id／データ型 integer<br>
+			- 投稿ID：カラム名 post_id／データ型 integer<br>
+			◆<strong>Likeモデル</strong>に<strong>バリデーション</strong>を追加してください。<br>
+			・ユーザーID：空の場合<br>
+			・投稿ID：空の場合<br>
 			<br>
-			【投稿一覧ページ作成】<br>
-			◆<strong>postsコントローラ</strong>は<strong>railsコマンド</strong>を使用して作成してください。<br>
-			◆投稿データ表示には、変数及び<strong>スクリプトレット</strong>（<strong><% %></strong>, <strong><%= %></strong>）を使用してください。<br>
-			◆投稿データ表示には、<strong>each文</strong>を使用してください。<br>
-			◆投稿一覧ページの表示が、<strong>上から新しい順に投稿データを表示</strong>するように修正してください。<br>
-			◆画面上の右上のメニューブロックに、「投稿一覧」のリンクを追加してください。<br>
-			◆画面上の「TweetApp」、「TweetAppとは？」、「投稿一覧」のリンクには、「<strong>link_to</strong>」メソッドを使用してください。<br>
-			◆TOPページ、アプリ概要ページ、投稿一覧ページの<strong>共通レイアウト</strong>（headerブロック）を纏めてください。<br>
+			【いいね！機能作成】<br>
+			◆<strong>likesコントローラ</strong>は<strong>railsコマンドを使用せず手動で作成</strong>してください。<br>
+			◆<strong>likesコントローラの全アクション</strong>は、<strong>ログインユーザーのみアクセス可能なように制限</strong>してください。<br>
+			◆&lt;div class="post-time"&gt;閉じタグの直後に「<strong>Font Awesome</strong>」を使用して、<strong>いいね！ボタンのアイコンを設置</strong>し<strong>リンク化</strong>してください。<br>
+			・Font Awesomeリンク：<br>
+			<a href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css</a><br>
+			◆アイコン色が下記の通りになるよう、CSSを追加してください。また、下記ダウンロードファイルのposts.scssのソースを該当するCSSファイルに貼り付けてください。<br>
+			・いいね前：グレー（#8899a6）<br>
+			・いいね後：ピンク（#ff2581）<br>
+			◆<strong>いいね！数</strong>がアイコンの右側に表示されるようにしてください。<br>
+			◆「<strong>ユーザー詳細ページ</strong>」に<strong>タブメニュー</strong>を追加し、「<strong>いいね！投稿一覧ページ</strong>」を新たに作成してください。<br>
+			◆下記ダウンロードファイルの【users】show.htmlのソースを、&lt;div class="user"&gt;閉じタグの直後に貼り付け、「<strong>ユーザー詳細ページ</strong>」と「<strong>いいね！投稿一覧ページ</strong>」が<strong>タブメニューで切り替わる</strong>ようにしてください。<br>
 			<br>
 			【その他】<br>
 			◆HTML/CSSは下記ファイルをベースとして使用してください。<br>
 			◆URL、コントローラ名、アクション名は下記のルーティング表に従って作成してください。<br>
 			<br>
-			・<a href="../../files/rubyOnRails/railsPostList.zip">HTML/CSSダウンロード</a><br>
+			・<a href="../../files/rubyOnRails/railsLikes.zip">HTML/CSSダウンロード</a><br>
 			<br>
 			<strong>ルーティング表</strong>
 			<p id="img">
-				<img src="../../images/rubyOnRails/railsPostList/routingTable.jpg" width="100%" />
+				<img src="../../images/rubyOnRails/railsLikes/routingTable.jpg" width="100%" />
 			</p>
 			<br>
 		</div><!-- /#main -->

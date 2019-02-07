@@ -56,8 +56,8 @@
 					<li><a href="railsLoginLogout1.html">ログイン・ログアウト機能 Ⅰ</a></li>
 					<li><a href="railsLoginLogout2.html">ログイン・ログアウト機能 Ⅱ</a></li>
 					<li><a href="railsUserMapping.html">投稿ユーザーマッピング機能</a></li>
-					<li><a href="railsGood.html">「いいね！」機能</a></li>
-					<li><a href="railsOther.html">その他追加機能</a></li>
+					<li><a href="railsLikes.html">「いいね！」機能</a></li>
+					<li><a href="railsSecurePassword.html">パスワード暗号化</a></li>
 					<li><a href="../index.html">Railsメニューへ戻る</a></li>
 					<li><a href="../../index.html">TOPへ戻る</a></li>
 				</ul>
@@ -133,10 +133,12 @@
 			</p>
 			<br>
 			【テーブル追加】<br>
-			◆下記の通り、<strong>テーブル</strong>を準備してください。<br>
-			・テーブル名：User<br>
-			・ユーザー名：カラム名 name／データ型 string<br>
-			・メールアドレス：カラム名 email／データ型 string<br>
+			◆下記の通り、<strong>モデル</strong>及び<strong>テーブル</strong>を準備してください。<br>
+			・モデル名：User<br>
+			・テーブル名：users<br>
+			・カラム<br>
+			- ユーザー名：カラム名 name／データ型 string<br>
+			- メールアドレス：カラム名 email／データ型 string<br>
 			◆<strong>Userモデル</strong>に<strong>バリデーション</strong>を追加し、下記に該当する場合は<strong>投稿内容をデータベースに保存せずにエラーメッセージを表示</strong>するようにしてください。<br>
 			・ユーザー名：空の投稿の場合<br>
 			・メールアドレス：<br>
