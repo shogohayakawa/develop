@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>TOPページ</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="shortcut icon" href="../images/favicon/favicon.jpeg">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/mui.js"></script>
+	<script type="text/javascript" src="../js/my.js"></script>
+	<script type="text/javascript" src="../js/jquery.smoothscroll.js"></script>
+	<script type="text/javascript" src="../js/jquery.scrollshow.js"></script>
+	<script>
+		$(function($) {
+			$('html').smoothscroll({
+				easing: 'swing',
+				speed: 1000,
+				margintop: 10
+			});
+			$('.totop').scrollshow({
+				position: 500
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="contents">
+		<div id="sub">
+			<header>
+				<h1>
+					<font color="white">Ruby on Rails</font>
+				</h1>
+				<p class="summary">
+					開発研修サイト
+				</p>
+			</header>
+			<nav>
+				<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="environment.html">環境構築</a></li>
+					<li><a href="completeImage.html">完成イメージ</a></li>
+					<li><a href="railsTopPage.html">TOPページ</a></li>
+					<li><a href="railsPostList.html">投稿一覧ページ</a></li>
+					<li><a href="railsPostDetail.html">投稿詳細ページ</a></li>
+					<li><a href="railsPostNew.html">新規投稿ページ</a></li>
+					<li><a href="railsPostEdit.html">投稿編集ページ</a></li>
+					<li><a href="railsPostDelete.html">投稿削除機能</a></li>
+					<li><a href="railsRegulation.html">不正データ制限機能</a></li>
+					<li><a href="railsUserManagement.html">ユーザー管理機能</a></li>
+					<li><a href="railsProfileImageSetting.html">プロフィール画像設定機能</a></li>
+					<li><a href="railsLoginLogout1.html">ログイン・ログアウト機能 Ⅰ</a></li>
+					<li><a href="railsLoginLogout2.html">ログイン・ログアウト機能 Ⅱ</a></li>
+					<li><a href="railsUserMapping.html">投稿ユーザーマッピング機能</a></li>
+					<li><a href="railsLikes.html">「いいね！」機能</a></li>
+					<li><a href="railsSecurePassword.html">パスワード暗号化</a></li>
+					<li><a href="../index.html">TOPへ戻る</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="main">
+			<h2>TOPページ</h2>
+			<h3>制作イメージ</h3>
+			<br>
+			<strong>TOPページ</strong>と<strong>アプリ概要ページ</strong>を作成してください。<br>
+			<br>
+			<strong>TOPページ</strong><br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsTopPage/topPage.png" width="100%" />
+			</p>
+			<br>
+			<strong>アプリ概要ページ</strong><br>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsTopPage/aboutPage.png" width="100%" />
+			</p>
+			<br>
+			【TOPページ／アプリ概要ページ作成】<br>
+			◆アプリケーション名は「<strong>tweet_app</strong>」としてください。<br>
+			◆画面上の「TweetApp」をクリックしたらTOPページに、「TweetAppとは？」をクリックしたらアプリ概要ページに遷移するようにしてください。<br>
+			◆<strong>homeコントローラ</strong>は<strong>railsコマンド</strong>を使用して作成してください。<br>
+			<br>
+			【その他】<br>
+			◆HTML/CSSは下記リンクからダウンロードし、ベースとして使用してください。<br>
+			◆画像は下記リンクからダウンロードし、使用してください。<br>
+			◆URL、コントローラ名、アクション名は下記のルーティング表に従って作成してください。<br>
+			<br>
+			・<a href="../files/rubyOnRails/railsTopPage.zip">HTML/CSS、画像ダウンロード</a><br>
+			<br>
+			<strong>ルーティング表</strong>
+			<p id="img">
+				<img src="../images/rubyOnRails/railsTopPage/routingTable.jpg" width="100%" />
+			</p>
+			<br>
+		</div><!-- /#main -->
+		<script>
+			menuDisplay();
+		</script>
+
+	</div><!-- /#contents -->
+	<footer>
+		<div class="footmenu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+			</ul>
+		</div><!-- /.footmenu -->
+		<div class="copyright">Copyright &#169; 2018 xxx Developer All Rights Reserved.</div><!-- /.copyright -->
+	</footer>
+	<div class="totop"><a href="#"><img src="../images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+</body>
+
+</html>
